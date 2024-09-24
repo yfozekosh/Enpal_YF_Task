@@ -1,5 +1,3 @@
-using YF.EnpalChallange.Api.Model.Contract;
-
-namespace YF.EnpalChallange.Api.Model;
+namespace YF.EnpalChallange.Api.Model.Contract;
 
 public record SalesManagerId(int Value) : IIdType;

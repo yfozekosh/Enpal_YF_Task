@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  database:
+    build:
+      context: ./src/database
+      dockerfile: Dockerfile
+    container_name: enpal-coding-challenge-db
+    ports:
+      - "5432:5432"
+    restart: always

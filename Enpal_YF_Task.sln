@@ -19,6 +19,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "solution", "solution", "{51
 		Dockerfile = Dockerfile
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "database", "database", "{F0318419-006B-4DCE-994D-FC715E7A6800}"
+	ProjectSection(SolutionItems) = preProject
+		src\database\Dockerfile = src\database\Dockerfile
+		src\database\init.sql = src\database\init.sql
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -40,5 +46,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{F3D1C212-8767-4A2F-B4EB-80937DE2CC57} = {CB958536-821C-471D-B2BC-B1C860959491}
 		{B599311B-2177-44DB-AEF1-3457B3998231} = {AAAF1867-36E3-4C3C-ABBF-1B25A734527F}
+		{F0318419-006B-4DCE-994D-FC715E7A6800} = {CB958536-821C-471D-B2BC-B1C860959491}
 	EndGlobalSection
 EndGlobal

@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{AAAF1867-36E3-4C3C-ABBF-1B25A734527F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{CB958536-821C-471D-B2BC-B1C860959491}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YF.EnpalChallange.Api", "src\YF.EnpalChallange.Api\YF.EnpalChallange.Api.csproj", "{F3D1C212-8767-4A2F-B4EB-80937DE2CC57}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YF.EnpalChallange.Tests", "tests\YF.EnpalChallange.Tests\YF.EnpalChallange.Tests.csproj", "{B599311B-2177-44DB-AEF1-3457B3998231}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "solution", "solution", "{510224EA-7AFA-489F-8767-051F88CB4DF7}"
+	ProjectSection(SolutionItems) = preProject
+		.dockerignore = .dockerignore
+		docker-compose.yml = docker-compose.yml
+		README.md = README.md
+		Dockerfile = Dockerfile
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F3D1C212-8767-4A2F-B4EB-80937DE2CC57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3D1C212-8767-4A2F-B4EB-80937DE2CC57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3D1C212-8767-4A2F-B4EB-80937DE2CC57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3D1C212-8767-4A2F-B4EB-80937DE2CC57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B599311B-2177-44DB-AEF1-3457B3998231}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B599311B-2177-44DB-AEF1-3457B3998231}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B599311B-2177-44DB-AEF1-3457B3998231}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B599311B-2177-44DB-AEF1-3457B3998231}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F3D1C212-8767-4A2F-B4EB-80937DE2CC57} = {CB958536-821C-471D-B2BC-B1C860959491}
+		{B599311B-2177-44DB-AEF1-3457B3998231} = {AAAF1867-36E3-4C3C-ABBF-1B25A734527F}
+	EndGlobalSection
+EndGlobal

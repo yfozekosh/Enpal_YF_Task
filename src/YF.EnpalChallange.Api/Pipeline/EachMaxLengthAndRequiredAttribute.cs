@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace YF.EnpalChallange.Api.Pipeline;
 
-public class EachMaxLengthAndRequired(int maxArrayLength, int maxStringLength) : ValidationAttribute
+public class EachMaxLengthAndRequiredAttribute(int maxArrayLength, int maxStringLength) : ValidationAttribute
 {
     protected override ValidationResult? IsValid(object? value, ValidationContext validationContext)
     {

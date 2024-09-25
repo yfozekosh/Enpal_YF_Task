@@ -1,10 +1,6 @@
-using System.Data;
-using Dapper;
-using Npgsql;
 using YF.EnpalChallange.Api.Api;
-using YF.EnpalChallange.Api.Model;
-using YF.EnpalChallange.Api.Model.Contract;
 using YF.EnpalChallange.Api.Persistence;
+using YF.EnpalChallange.Api.Services;
 
 namespace YF.EnpalChallange.Api;
 
@@ -17,7 +13,9 @@ public class Program
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();
 
-        builder.Services.AddPersistenceModule(builder.Configuration);
+        builder.Services
+            .AddPersistenceModule(builder.Configuration)
+            .AddCalendarModule();
 
         var app = builder.Build();
 
@@ -29,7 +27,7 @@ public class Program
 
         app.UseHttpsRedirection();
 
-        PostCalendarApi.Map(app);
+        PostCalendarApiValidation.Map(app);
 
         app.Run();
     }

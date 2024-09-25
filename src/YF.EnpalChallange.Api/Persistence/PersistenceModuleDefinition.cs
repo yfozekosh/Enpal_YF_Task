@@ -1,8 +1,7 @@
 ﻿using System.Data;
 using Dapper;
 using Npgsql;
-using YF.EnpalChallange.Api.Model;
-using YF.EnpalChallange.Api.Model.Contract;
+using YF.EnpalChallange.Api.Persistence.Abstract;
 
 namespace YF.EnpalChallange.Api.Persistence;
 
@@ -11,7 +10,7 @@ public static class PersistenceModuleDefinition
     public static IServiceCollection AddPersistenceModule(this IServiceCollection services, IConfiguration configuration)
     {
         ConfigureDb(services, configuration);
-        services.AddScoped<ManagerRepository>();
+        services.AddScoped<ICalendarRepository, CalendarRepository>();
         return services;
     }
 
@@ -21,26 +20,6 @@ public static class PersistenceModuleDefinition
         services.AddScoped<IDbConnection>(_ =>
             new NpgsqlConnection(configuration.GetConnectionString("DefaultConnection")));
 
-        SqlMapper.AddTypeHandler(new IdTypeHandler<SalesManagerId>(id => new SalesManagerId(id)));
-        SqlMapper.AddTypeHandler(new IdTypeHandler<SlotId>(id => new SlotId(id)));
         DefaultTypeMap.MatchNamesWithUnderscores = true;
-
-        ValidateTypeHandlers();
-    }
-
-    private static void ValidateTypeHandlers()
-    {
-        var idTypeInterface = typeof(IIdType);
-        var idTypes = typeof(IIdType).Assembly.GetTypes()
-            .Where(t => idTypeInterface.IsAssignableFrom(t) && t is { IsInterface: false, IsAbstract: false })
-            .ToList();
-
-        foreach (var idType in idTypes)
-        {
-            if (!SqlMapper.HasTypeHandler(idType))
-            {
-                throw new InvalidOperationException($"No type handler registered for {idType.Name}");
-            }
-        }
     }
 }

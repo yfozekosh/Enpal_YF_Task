@@ -17,5 +17,3 @@ services:
     restart: always
     depends_on:
       - database
-    environment:
-      - ASPNETCORE_ENVIRONMENT=Development

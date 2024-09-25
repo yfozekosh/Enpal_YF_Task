@@ -1,23 +1,15 @@
 using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNetCore.Mvc;
 using YF.EnpalChallange.Api.Dto;
-using YF.EnpalChallange.Api.Persistence;
+using YF.EnpalChallange.Api.Services;
 
 namespace YF.EnpalChallange.Api.Api;
 
-public static class PostCalendarApi
+public static class PostCalendarApiValidation
 {
     public static void Map(WebApplication application)
     {
-        application.MapGet("/salesmanagers", async (ManagerRepository dbConnection) =>
-            {
-                var salesManagers = await dbConnection.FindManagersByFeatures(["SolarPanels", "Heatpumps"], "English", "Gold");
-                return Results.Ok(salesManagers);
-            })
-            .WithName("GetSalesManagers")
-            .WithOpenApi();
-
-        application.MapPost("/calendar", async ([FromBody] CalendarQueryInputDto input) =>
+        application.MapPost("/calendar/query", async ([FromBody] CalendarQueryInputDto input, CalendarService calendarService) =>
             {
                 var validationContext = new ValidationContext(input);
                 var validationResults = new List<ValidationResult>();
@@ -28,8 +20,14 @@ public static class PostCalendarApi
                     return Results.BadRequest(validationResults);
                 }
 
+                var availableSlots = await calendarService.GetAvailableSlots(input.Date, input.Products, input.Language, input.Rating);
+
                 // Process the input as needed
-                return Results.Ok(input);
+                return Results.Ok(availableSlots.Select(a => new CalendarQueryResponseItem
+                {
+                    AvailableCount = a.Value,
+                    Start = a.Key
+                }));
             })
             .WithName("PostCalendarQuery")
             .WithOpenApi();

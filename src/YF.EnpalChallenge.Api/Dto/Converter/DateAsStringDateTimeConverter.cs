@@ -2,7 +2,7 @@
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
-namespace YF.EnpalChallange.Api.Dto.Converter;
+namespace YF.EnpalChallenge.Api.Dto.Converter;
 
 public class DateAsStringDateTimeConverter : JsonConverter<DateTime>
 {

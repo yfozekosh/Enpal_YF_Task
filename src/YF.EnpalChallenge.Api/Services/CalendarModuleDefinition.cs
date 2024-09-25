@@ -1,4 +1,4 @@
-﻿namespace YF.EnpalChallange.Api.Services;
+﻿namespace YF.EnpalChallenge.Api.Services;
 
 public static class CalendarModuleDefinition
 {

@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace YF.EnpalChallange.Api.Pipeline;
+namespace YF.EnpalChallenge.Api.Pipeline;
 
 public class EachMaxLengthAndRequiredAttribute(int maxArrayLength, int maxStringLength) : ValidationAttribute
 {

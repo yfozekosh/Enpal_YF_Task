@@ -1,6 +1,6 @@
-using YF.EnpalChallange.Api.Model.Dto;
+using YF.EnpalChallenge.Api.Model;
 
-namespace YF.EnpalChallange.Api.Persistence.Abstract;
+namespace YF.EnpalChallenge.Api.Persistence.Abstract;
 
 public interface ICalendarRepository
 {

@@ -1,7 +1,7 @@
-﻿using YF.EnpalChallange.Api.Model.Dto;
-using YF.EnpalChallange.Api.Persistence.Abstract;
+﻿using YF.EnpalChallenge.Api.Model;
+using YF.EnpalChallenge.Api.Persistence.Abstract;
 
-namespace YF.EnpalChallange.Api.Services;
+namespace YF.EnpalChallenge.Api.Services;
 
 public class CalendarService(ICalendarRepository calendarRepository)
 {

@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc.Testing;
-using YF.EnpalChallange.Api;
+using YF.EnpalChallenge.Api;
 
-namespace YF.EnpalChallange.Tests;
+namespace YF.EnpalChallenge.Tests;
 
 public class ApiTestingClientFactory : WebApplicationFactory<Program>
 {

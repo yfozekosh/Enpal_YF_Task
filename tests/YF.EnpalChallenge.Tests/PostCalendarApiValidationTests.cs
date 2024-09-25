@@ -1,9 +1,9 @@
 using System.Net.Http.Json;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Xunit.Abstractions;
-using Program = YF.EnpalChallange.Api.Program;
+using Program = YF.EnpalChallenge.Api.Program;
 
-namespace YF.EnpalChallange.Tests;
+namespace YF.EnpalChallenge.Tests;
 
 public class PostCalendarApiValidationTests(WebApplicationFactory<Program> factory, ITestOutputHelper testOutput)
     : IClassFixture<WebApplicationFactory<Program>>

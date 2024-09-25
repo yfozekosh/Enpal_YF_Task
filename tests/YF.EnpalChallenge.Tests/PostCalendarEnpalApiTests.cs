@@ -1,9 +1,9 @@
 ﻿using System.Net.Http.Json;
 using System.Text.Json.Nodes;
 using Xunit.Abstractions;
-using YF.EnpalChallange.Api.Dto;
+using YF.EnpalChallenge.Api.Dto;
 
-namespace YF.EnpalChallange.Tests;
+namespace YF.EnpalChallenge.Tests;
 
 // Ported from nodejs tests provided by Enpal.
 public class PostCalendarEnpalApiTests(ApiTestingClientFactory factory, ITestOutputHelper output)

@@ -27,7 +27,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\src\YF.EnpalChallange.Api\YF.EnpalChallange.Api.csproj" />
+      <ProjectReference Include="..\..\src\YF.EnpalChallenge.Api\YF.EnpalChallenge.Api.csproj" />
     </ItemGroup>
 
     <ItemGroup>

@@ -1,4 +1,4 @@
-﻿namespace YF.EnpalChallange.Api.Model.Dto;
+﻿namespace YF.EnpalChallenge.Api.Model;
 
 public class ManagerSlotsDto
 {

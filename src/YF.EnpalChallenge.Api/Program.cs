@@ -1,8 +1,8 @@
-using YF.EnpalChallange.Api.Api;
-using YF.EnpalChallange.Api.Persistence;
-using YF.EnpalChallange.Api.Services;
+using YF.EnpalChallenge.Api.Api;
+using YF.EnpalChallenge.Api.Persistence;
+using YF.EnpalChallenge.Api.Services;
 
-namespace YF.EnpalChallange.Api;
+namespace YF.EnpalChallenge.Api;
 
 public class Program
 {

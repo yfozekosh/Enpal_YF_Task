@@ -1,9 +1,9 @@
 ﻿using System.Data;
 using Dapper;
-using YF.EnpalChallange.Api.Model.Dto;
-using YF.EnpalChallange.Api.Persistence.Abstract;
+using YF.EnpalChallenge.Api.Model;
+using YF.EnpalChallenge.Api.Persistence.Abstract;
 
-namespace YF.EnpalChallange.Api.Persistence;
+namespace YF.EnpalChallenge.Api.Persistence;
 
 public class CalendarRepository(IDbConnection dbConnection) : ICalendarRepository
 {

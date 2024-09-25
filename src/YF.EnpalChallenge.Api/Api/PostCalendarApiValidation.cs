@@ -1,9 +1,9 @@
 using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNetCore.Mvc;
-using YF.EnpalChallange.Api.Dto;
-using YF.EnpalChallange.Api.Services;
+using YF.EnpalChallenge.Api.Dto;
+using YF.EnpalChallenge.Api.Services;
 
-namespace YF.EnpalChallange.Api.Api;
+namespace YF.EnpalChallenge.Api.Api;
 
 public static class PostCalendarApiValidation
 {

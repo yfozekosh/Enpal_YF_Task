@@ -1,9 +1,9 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.Text.Json.Serialization;
-using YF.EnpalChallange.Api.Dto.Converter;
-using YF.EnpalChallange.Api.Pipeline;
+using YF.EnpalChallenge.Api.Dto.Converter;
+using YF.EnpalChallenge.Api.Pipeline;
 
-namespace YF.EnpalChallange.Api.Dto;
+namespace YF.EnpalChallenge.Api.Dto;
 
 public class CalendarQueryInputDto
 {

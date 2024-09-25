@@ -7,9 +7,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{AAAF1867
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{CB958536-821C-471D-B2BC-B1C860959491}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YF.EnpalChallange.Api", "src\YF.EnpalChallange.Api\YF.EnpalChallange.Api.csproj", "{F3D1C212-8767-4A2F-B4EB-80937DE2CC57}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YF.EnpalChallenge.Api", "src\YF.EnpalChallenge.Api\YF.EnpalChallenge.Api.csproj", "{F3D1C212-8767-4A2F-B4EB-80937DE2CC57}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YF.EnpalChallange.Tests", "tests\YF.EnpalChallange.Tests\YF.EnpalChallange.Tests.csproj", "{B599311B-2177-44DB-AEF1-3457B3998231}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YF.EnpalChallenge.Tests", "tests\YF.EnpalChallenge.Tests\YF.EnpalChallenge.Tests.csproj", "{B599311B-2177-44DB-AEF1-3457B3998231}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "solution", "solution", "{510224EA-7AFA-489F-8767-051F88CB4DF7}"
 	ProjectSection(SolutionItems) = preProject

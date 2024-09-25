@@ -1,6 +1,6 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace YF.EnpalChallange.Api.Dto;
+namespace YF.EnpalChallenge.Api.Dto;
 
 public class CalendarQueryResponseItem
 {

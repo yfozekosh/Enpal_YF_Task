@@ -23,7 +23,7 @@
 3. **Access the Application**
 
     - The API should be accessible at `http://localhost:3000`
-    - The database should be accessible at `http://localhost:5432`
+    - The database is accessible on port `5432`. Update user and password in `src/database/Dockerfile` if needed.
 
 ## Running Tests
 
@@ -31,10 +31,17 @@
 
     - Make sure the database container is up and running.
 
-2. **Run the Tests**
+2. **Run the dotnet Tests**
 
     ```sh
     dotnet test
+    ```
+   
+3. **Run the node Tests**
+    ```cmd
+   cd "task\2024_06 Take home challenge resources\tests"
+   npm install
+   npm run tets
     ```
 
 ## Stopping the Application
@@ -50,3 +57,9 @@
 - ASP\.NET
 - Dapper
 - Npgsql
+
+## Possible improvements
+- Add more tests
+- Add logging
+- Add db indexes
+- Rewrite test initialisation to spawn a db on test command and populate it per test-suite

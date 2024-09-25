@@ -10,7 +10,7 @@
 1. **Clone the Repository**
 
     ```sh
-    git clone https://github.com/YuriiFozekosh/Enpal_YF_Task.git
+    git clone https://github.com/yfozekosh/Enpal_YF_Task.git
     cd Enpal_YF_Task
     ```
 
